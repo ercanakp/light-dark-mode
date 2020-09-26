@@ -21,9 +21,9 @@ const LIGHT_THEME = 'light';
 
 // Set Images for Dark Mode ore Light Mode
 function imageMode(mode) {
-    image1.src = `img/undraw_proud_coder_${mode}.svg`;
-    image2.src = `img/undraw_feeling_proud_${mode}.svg`;
-    image3.src = `img/undraw_conceptual_idea_${mode}.svg`;
+    image1.src = `images/undraw_proud_coder_${mode}.svg`;
+    image2.src = `images/undraw_feeling_proud_${mode}.svg`;
+    image3.src = `images/undraw_conceptual_idea_${mode}.svg`;
 }
 */
 
