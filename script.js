@@ -3,6 +3,7 @@ const nav = document.getElementById('nav');
 const modeicon = document.getElementById('toggle-icon');
 
 // The 3 lines below was commented out because of DRY coding
+
 // const image1 = document.getElementById('image1');
 // const image2 = document.getElementById('image2');
 // const image3 = document.getElementById('image3');
