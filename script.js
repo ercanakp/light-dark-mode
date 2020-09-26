@@ -29,7 +29,7 @@ function imageMode(mode) {
 
 // for DRY : Set all images mode to current mode
 function setImageMode(img, toMode) {
-    toMode === DARK_THEME ? img.src =img.src.replace('light', toMode) : img.src = img.src.replace('dark', toMode);  
+    toMode === DARK_THEME ? img.src =img.src.replace('_light', '_' + toMode) : img.src = img.src.replace('_dark', '_' + toMode);  
 }
 
 /*
