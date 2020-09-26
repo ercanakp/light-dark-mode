@@ -79,12 +79,12 @@ a:focus {
 
 a:active {
     color: black;
-    border-color: black;
-    
+    border-color: black;    
 }
 
-
-/* Section */
+/* ******
+ Sections 
+******** */
 
 section {
     width: 100vw;

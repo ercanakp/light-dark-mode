@@ -2,7 +2,9 @@ const toggleSwitch = document.querySelector('input[type="checkbox"]');
 const nav = document.getElementById('nav');
 const modeicon = document.getElementById('toggle-icon');
 
+//
 // The 3 lines below was commented out because of DRY coding
+//
 
 // const image1 = document.getElementById('image1');
 // const image2 = document.getElementById('image2');
@@ -27,9 +29,7 @@ function imageMode(mode) {
 
 // for DRY : Set all images mode to current mode
 function setImageMode(img, mode) {
-
-    mode === DARK_THEME ? img.src =img.src.replace('light', mode) : img.src = img.src.replace('dark', mode);
-    
+    mode === DARK_THEME ? img.src =img.src.replace('light', mode) : img.src = img.src.replace('dark', mode);  
 }
 
 
