@@ -23,6 +23,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    margin-bottom: 0;
 }
 
 body {
@@ -54,6 +55,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    width: 100vw;
     padding: 25px;
     font-family: Oswald, sans-serif;
     letter-spacing: 3px;
@@ -87,6 +89,7 @@ section {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -113,8 +116,8 @@ section {
 }
 
 img {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 240px;
 }
 
 
@@ -172,19 +175,19 @@ button:hover:not(.outline) {
 }
 
 .text-box {
-    width: 40%;
+    width: 40%; 
+    margin: 0 auto;
     text-align: justify;
     background: rgb(0 0 0 / 50%);
     color: var(--on-primary);
     border-radius: 10px;
-    padding: 30px;
+    padding: 30px;    
 }
 
 p {
-    margin: 0;
+    margin: 0; 
     line-height: 25px;
-}
-
+} 
 
 /* Contact Section */
 
@@ -197,4 +200,79 @@ p {
 
 .fab:hover {
     color: var(--on-background);
+}
+
+/* Dark Mode Toggle */
+.theme-switch-wrapper {
+    position: fixed;
+    display: flex;
+    top:30px;
+    right: 25px;
+    z-index: 100;
+    align-items: center;
+}
+
+.theme-switch-wrapper span {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.toggle-text {
+    position: relative;
+    top:-4px;
+    right: 5px;
+    color:var(--on-background);
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    height: 34px;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    background: #ccc;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;  
+}
+
+.slider::before {
+    position: absolute;
+    width: 26px;
+    background: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background: var(--primary-color);
+}
+
+input:checked + .slider::before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round::before {
+    border-radius: 50%;
+}
+
+.fas {
+    font-size: 30px;
+    margin-right:5px;
 }
